@@ -11,7 +11,18 @@
     ``` shell
     git clone git@github.com:Dar3cz3Q-University/FoAI-Frontend.git
     ```
-2. To be continued...
+2. Install dependencies
+    ``` shell
+    npm i
+    ```
+3. Copy and fill environment file
+    ``` shell
+    cp .env.dist .env
+    ```
+4. Run application
+    ``` shell
+    npm run dev
+    ```
 
 ## Report
 
