@@ -13,7 +13,7 @@
     ```
 2. Install dependencies
     ``` shell
-    npm i
+    npm run install
     ```
 3. Copy and fill environment file in src directory
     ``` shell
