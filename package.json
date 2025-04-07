@@ -6,7 +6,8 @@
     "build": "npm run build --prefix src",
     "lint": "npm run lint --prefix src",
     "preview": "npm run preview --prefix src",
-    "install": "npm ci --prefix src"
+    "install": "npm ci --prefix src",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@semantic-release/exec": "^7.0.3",
