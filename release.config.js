@@ -7,7 +7,7 @@ module.exports = {
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "echo ${nextRelease.version} > ../version && echo '{\"schemaVersion\": 1, \"label\": \"version\", \"message\": \"v${nextRelease.version}\", \"color\": \"blue\"}' > ../docs/version.json"
+        "prepareCmd": "echo ${nextRelease.version} > version && echo '{\"schemaVersion\": 1, \"label\": \"version\", \"message\": \"v${nextRelease.version}\", \"color\": \"blue\"}' > docs/version.json"
       }
     ],
     [
