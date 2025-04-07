@@ -15,7 +15,7 @@
     ``` shell
     npm i
     ```
-3. Copy and fill environment file
+3. Copy and fill environment file in src directory
     ``` shell
     cp .env.dist .env
     ```
