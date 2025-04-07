@@ -7,7 +7,7 @@
     "lint": "npm run lint --prefix src",
     "preview": "npm run preview --prefix src",
     "install": "npm ci --prefix src",
-    "release": "semantic-release"
+    "release": "npx semantic-release"
   },
   "devDependencies": {
     "@semantic-release/exec": "^7.0.3",
