@@ -1,8 +1,7 @@
-{
-  "branches": [
-    "master"
-  ],
-  "plugins": [
+module.export = {
+  branches: ["master"],
+  tagFormat: 'v${version}',
+  plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
@@ -21,5 +20,6 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]"
       }
     ]
-  ]
+  ],
+  pkgRoot: 'src'
 }
