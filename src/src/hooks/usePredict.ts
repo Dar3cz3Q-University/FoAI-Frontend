@@ -40,6 +40,7 @@ export const usePredict = () => {
       const data: PredictionResponse[] = await response.json();
       setResults(data);
     } catch (err: any) {
+      console.error(err);
       setError(err.message || "Unknown error");
     } finally {
       setIsLoading(false);
