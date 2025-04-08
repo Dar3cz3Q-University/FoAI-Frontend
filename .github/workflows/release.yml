@@ -63,6 +63,8 @@ jobs:
     name: Publish to Azure Static Web Apps
     runs-on: ubuntu-latest
     needs: tag
+    env:
+      VITE_API_URL: ${{ vars.VITE_API_URL }}
 
     if: needs.tag.outputs.released == 'true'
 
