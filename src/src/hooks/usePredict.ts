@@ -28,7 +28,7 @@ export const usePredict = () => {
 
     try {
       console.log(API_URL);
-      const response = await fetch(`${API_URL}/predict`, {
+      const response = await fetch(`https://foai-backend.politebay-14b7f84c.polandcentral.azurecontainerapps.io/predict`, {
         method: "POST",
         body: formData,
       });
