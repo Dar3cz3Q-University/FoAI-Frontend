@@ -3,15 +3,15 @@ import { useState } from "react";
 const API_URL = import.meta.env.VITE_API_URL;
 
 interface PredictionResult {
-    predicted_id: number;
-    predicted_category: string;
-    category_distribution: Record<string, number>;
-  }
-  
-  interface PredictionResponse {
-    filename: string;
-    result: PredictionResult;
-  }
+  predicted_id: number;
+  predicted_category: string;
+  category_distribution: Record<string, number>;
+}
+
+interface PredictionResponse {
+  filename: string;
+  result: PredictionResult;
+}
 
 export const usePredict = () => {
   const [isLoading, setIsLoading] = useState(false);
