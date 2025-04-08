@@ -27,6 +27,7 @@ export const usePredict = () => {
     files.forEach((file) => formData.append("files", file));
 
     try {
+      console.log(API_URL);
       const response = await fetch(`${API_URL}/predict`, {
         method: "POST",
         body: formData,
